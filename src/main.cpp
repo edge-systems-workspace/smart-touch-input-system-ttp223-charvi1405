@@ -1,15 +1,16 @@
 #include <Arduino.h>
 /**
- * @file main.ino
+ * @file main.cpp
  * @brief Embedded Touch Detection System using TTP223
- * @author YOUR_NAME
- * @date YYYY-MM-DD
+ * @author Charvi Mittal
+ * @date 2026-02-19
  *
  * @details
  * Reads digital touch input from TTP223 sensor
  * and displays structured output via Serial Monitor.
  */
-
+int touchPin = 3;
+int ledPin = 13;
  // TODO 1:
  // Define touch sensor digital pin (Use pin 2)
 
