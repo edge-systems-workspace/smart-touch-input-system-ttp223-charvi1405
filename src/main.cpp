@@ -28,5 +28,11 @@ void loop() {
         Serial.println("Touch Detected");
 
     }
+    else
+    {
+        digitalWrite(ledPin, LOW);
+        Serial.println("No Touch");
+    }
+    delay(200);
 
 }
