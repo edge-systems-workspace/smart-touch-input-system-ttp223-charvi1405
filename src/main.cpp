@@ -9,24 +9,16 @@
  * Reads digital touch input from TTP223 sensor
  * and displays structured output via Serial Monitor.
  */
-int touchPin = 3;
+int touchPin = 2;
 int ledPin = 13;
- // TODO 1:
- // Define touch sensor digital pin (Use pin 2)
-
- // TODO 2:
- // Create variable to store touch state
 
 void setup() {
+    pinMode(touchPin, INPUT);
 
-    // TODO 3:
-    // Initialize Serial communication (9600 baud rate)
+    pinMode(ledPin, OUTPUT);
 
-    // TODO 4:
-    // Configure touch pin as INPUT
+    Serial.begin(9600);
 
-    // TODO 5:
-    // Print system initialization message
 }
 
 void loop() {
